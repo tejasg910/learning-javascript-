@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.moveTo(0, 0);
+        ctx.lineTo(200, 100);
+        ctx.stroke();
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+
+    <section>
+        <main>
+            <p>Total HTML features: 555</p>
+            <p>Semantic tags introduced in html5 </p>
+
+
+            <p>Following are the elements introduced in the html5</p>
+            <ul>
+                <li>article</li>
+                <li>aside</li>
+                <li>audio</li>
+                <li>canvas</li>
+                <li>datalist</li>
+                <li>details</li>
+                <li>figure</li>
+                <li>figcaption</li>
+                <li>header</li>
+                <li>main</li>
+                <li>mark</li>
+                <li>meter</li>
+                <li>nav</li>
+                <li>output</li>
+                <li>progress</li>
+                <li>section</li>
+                <li>summary</li>
+                <li>time</li>
+                <li>video</li>
+                <li>wbr</li>
+
+
+
+            </ul>
+
+
+            <div>
+                <h4>SVG</h4>
+                <p>You can draw uisng svg</p>
+                <svg width="100" height="100">
+                    <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+                </svg>
+            </div>
+
+            <div>
+                <h4>Drag and drop feature introduced in the html </h4>
+                <div>
+                    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+                    <img id="drag1" src="code.jpg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+                </div>
+            </div>
+
+
+            <div>
+                <h4>Canvas</h4>
+                <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+                    ths
+                </canvas>
+            </div>
+
+
+            <div>
+                <h4>PEER TO PEER</h4>
+                <div>
+                    communication between machines to machines can be achieved using peer to peer feature introduced in
+                    html5
+                </div>
+            </div>
+
+
+            <div>
+                <h4>Location api</h4>
+                <p>We can access the client location from this location api </p>
+            </div>
+
+        </main>
+    </section>
+</body>
+
+</html>

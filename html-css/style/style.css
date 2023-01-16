@@ -1,0 +1,26 @@
+
+
+section{
+    /* background-color: red; */
+}
+
+
+
+
+
+.divelement{
+    /* box model property   */
+    border:  1px solid red;
+    margin:  10px;
+    padding: 10px;
+
+
+}
+
+
+.dm{
+    background-color: black;
+    color: white;
+}
+
+
