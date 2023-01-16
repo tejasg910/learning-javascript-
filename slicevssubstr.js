@@ -1,4 +1,4 @@
-let str = "thisisstring";
+let str = "thisisnormalstring";
 let arr = [322, 23, 3, 23, 3, 2];
 
 // console.log(str.substring(1, 3));
