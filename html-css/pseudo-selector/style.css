@@ -1,0 +1,117 @@
+/* pseudo selectors in css  */
+
+
+/* pseudo classes 
+
+example hover visited active 
+this represent about the state of the element 
+you need to used : 
+
+*/
+
+
+
+/* pseudo element 
+
+    first-line first-letter 
+    this represent about the element 
+
+    :: by this keyword we can identify the pseudo element 
+*/
+
+
+.container::first-line{
+  
+}
+
+
+
+/* find the third paragraph in section and apply the css to it  */
+ section p:nth-child(3){
+    color: red;
+    background-color: black;
+}
+
+
+
+
+/* apply even p elements inside the section  */
+section p:nth-child(even){
+    color: blue;
+}
+
+
+
+/* apply to the all  p elements using n+0 means from 0 to the end of the element apply this property to elements in the section  */
+section p:nth-child(n+0) {
+    color: blue;
+}
+
+
+
+
+section .active:active{
+
+    /* at the time click on the link this will fire  */
+    color: blue;
+}
+
+
+section input:checked{
+ color: red;
+    font-size: 20px;
+    height: 100px;
+}
+
+
+
+
+section input[type="button"]:disabled{
+    /* only apply for the input in the section who has a button type and been disabled  */
+    background-color: red;
+}
+
+
+section .content p:empty{
+    /* will apply to that part only who have no content inside p tag of content which is enclosed in section  */
+    background-color: red;
+    width: 100px;
+    height: 10px;
+
+    /* but if you don't add the height and width property to the element you will see no change has been reflected  */
+}
+
+
+section input:enabled{
+    padding: 20px;
+    /* will be applied to those enabled input tags */
+}
+
+
+section p:first-child{
+    /* first p tag in the section will be applied  */
+    color: purple;
+    font-size: 30px;
+
+}
+
+section form input:in-range{
+    /* you you correctly pass the parameters in the html  */
+    border: 3px solid green;
+}
+
+
+section form input:invalid{
+
+    /* will fire only when the input is not satifying the input */
+    padding: 29px;
+    color: red;
+}
+
+
+
+section:not(p){
+    /* will fire to those elements does not belongs to the p element */
+    background-color: yellow;
+
+}

@@ -1,0 +1,32 @@
+/* 
+Layout has been changed 
+animation has been added (media queries)
+variables introduced 
+flex box introduced 
+fonts has been added 
+grid layout added 
+full screen feature 
+gradient introduced 
+multiple column layouts 
+css3 selectors were introduced 
+opacity features introduced 
+
+
+
+
+
+*/
+
+.container{
+    display:flex;
+    justify-content: center;
+}
+
+
+.box{
+    margin: 10px;
+width: 200px;
+    height: 200px;
+    display: inline-block;
+    background-color: red;
+}
