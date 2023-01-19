@@ -1,0 +1,29 @@
+
+
+section main{
+    color: red;
+    /* all contents inside the section which contains the main tag will be applied  */
+}
+
+section p{
+    color: blue;
+    /* all p tags in the section will be fired */
+}
+
+
+section > p{
+    /* only first child will be applied  */
+    background-color: yellow;
+}
+
+section + p{
+    /* the properties are applied only first sibling of the section tag */
+    background-color: aqua;
+}
+
+section ~ p{
+    /* all the sibligs of the section tag will be fired  */
+    background-color: pink;
+}
+
+

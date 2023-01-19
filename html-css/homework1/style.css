@@ -1,0 +1,50 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+
+
+.firstrow{
+    display: flex;
+    justify-content: space-between;
+}
+
+.firstrow .box{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+
+}
+
+.maincontainer2 .centremain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+  
+   
+   
+}
+
+
+.maincontainer2 .firstrow{
+    display: flex;
+    align-items: center;
+}
+
+.centremain .second{
+    display: flex;
+}
+
+.centremain .box{
+    margin: 10px;
+}
+
+
