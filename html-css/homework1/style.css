@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .container{
     width: 100vw;
     height: 100vh;
@@ -25,9 +31,14 @@
 .maincontainer2 .centremain{
     display: flex;
     flex-direction: column;
+    
+    align-content: space-between;
+    justify-content: space-between;
     align-items: center;
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
+
+
   
    
    
@@ -37,14 +48,17 @@
 .maincontainer2 .firstrow{
     display: flex;
     align-items: center;
+    
 }
 
 .centremain .second{
-    display: flex;
+  display: flex;
+ 
+   
+   
 }
-
-.centremain .box{
-    margin: 10px;
+.second .box{
+    margin: 0 25px;
 }
 
 
