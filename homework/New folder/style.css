@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aliceblue;
+    
+}
+
+
+.container{
+  
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Inter var, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+.coversection{
+    width: 100%;
+    background-color: #f7faff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+align-items: center;
+padding: 1rem 0;
+}
+
+.coversection h2{
+    font-size: 3rem;
+    font-weight: 900;
+    padding-bottom: 0.5rem;
+}
+
+.inputsection {
+margin: 2rem 0;
+}
+.inputsection textarea{
+    width: 70vw;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 3%),
+        0 1px 0 rgb(0 0 0 / 5%),
+        0 0 8px rgb(0 0 0 / 3%),
+        0 20px 30px rgb(0 0 0 / 10%);
+        border: none;
+        outline: none;
+        padding: 1rem;
+        font-size: 1.5rem;
+        border-radius: 5px;
+}
+
+.inputsection a{
+    text-decoration: none;
+    color: #007ca5;
+}
+
+.valuesection h4{
+    color: #007ca5;
+}
+
+.valuesection{
+    margin: 1rem 0;
+    width: 10rem;
+    text-align: center;
+}
+
+.valuesection span{
+    font-weight: 900;
+ font-size: 3rem;
+font-family: 'Inconsolata', monospace;
+
+   
+}
+
+
+.valuesection .id{
+    color: #107db5;
+}
+
+.valuesection .cls{
+    color: #10b57d;
+}
+
+.valuesection .element{
+    color: #7d10b5;
+}
+
+.boxsection{
+    margin: 1rem 0;
+font-family: 'Inconsolata', monospace;
+    height: 20vh;
+    width: 70vw;
+   
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxsection .box{
+    width: 30%;
+    background-color: white;
+    border-radius: 7px;
+    height: 100%;
+}
+
+.boxsection .box .value{
+    font-size: 3.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.boxsection .value{
+    color: white;
+    background-color: #007ca5;
+    width: 95%;
+    border-radius: 7px;
+    margin: 5px auto;
+
+}
+
+.boxsection .box .text{
+    text-align: center;
+}
+
+.boxsection .box2 .value{
+    background-color: #10b57d;
+}
+.boxsection .box3 .value {
+    background-color: #7d10b5;
+}

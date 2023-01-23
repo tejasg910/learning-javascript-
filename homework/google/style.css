@@ -12,15 +12,13 @@
     --green: green;
 }
 
-.maincontainer .main .logo {
+ .main .logo {
     display: flex;
     margin-bottom: 1rem 0;
 }
-.maincontainer{
-   
-}
 
-.maincontainer .main{
+
+ .main{
     width: 100vw;
         height: 90vh;
         
@@ -30,20 +28,20 @@
     align-items: center;
 
 }
-.maincontainer .main .logo h3{
+ .main .logo h3{
     font-size: 5rem;
 }
 
-.maincontainer .main .logo .blue{
+ .main .logo .blue{
     color: var(--blue);
 }
-.maincontainer .main .logo .red {
+ .main .logo .red {
     color: var(--red);
 }
-.maincontainer .main .logo .green {
+ .main .logo .green {
     color: var(--green);
 }
-.maincontainer .main .logo .orange {
+ .main .logo .orange {
     color: var(--orange);
 
 }
@@ -79,6 +77,7 @@
     border-radius: 3px;
     font-size: 1rem;
     margin: 0 5px;
+    cursor: pointer;
 }
 
 .links {

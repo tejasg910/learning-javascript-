@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polypane clone</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Inconsolata:wght@500&family=Lato&family=Orbitron:wght@700&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+        <section class="coversection">
+            <h2>CSS Specificity Calculator
+            </h2>
+            <p>Supports all of CSS Selectors level 4</p>
+        </section>
+        <section class="inputsection">
+            <textarea name="input" id="input" rows="1"
+                placeholder='Fill in a CSS selector e.g. " header h1#sitetitle .logo'></textarea>
+            <div>
+                <span>Try some:</span>
+                <a href="">header h1#sitetitle > .logo</a>,
+                <a href="">ul > li:is(.highlighted, .active)</a>
+                <a href="">header:where(#top) nav li:nth-child(2n + 1)</a>
+            </div>
+        </section>
+        <section class=" valuesection">
+            <h4>SPECIFICITY SCORE</h4>
+            <span class="id">0</span><span>,</span><span class="cls">0</span><span>,</span><span
+                class="element">0</span>
+        </section>
+        <section class="boxsection">
+            <div class="box1 box">
+                <div class="value">
+                    0
+                </div>
+                <div class="text">
+                    0
+                </div>
+            </div>
+            <div class="box2 box">
+                <div class="value">
+                    0
+                </div>
+                <div class="text">
+                    0
+                </div>
+            </div>
+            <div class="box3 box">
+                <div class="value">
+                    0
+                </div>
+                <div class="text">
+                    0
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
