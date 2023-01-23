@@ -14,6 +14,7 @@
 
 .maincontainer .main .logo {
     display: flex;
+    margin-bottom: 1rem 0;
 }
 .maincontainer{
    
@@ -44,37 +45,68 @@
 }
 .maincontainer .main .logo .orange {
     color: var(--orange);
+
 }
 
 .searchinput{
     position: relative;
+    margin: 1rem 0;
 }
 .absolute{
     position: absolute;
 }
 
 .input{
+   
     padding: 0.8rem;
+    padding-left: 2rem;
     border-radius: 20px;
     width: 40vw;
     outline: none;
     border: 1px solid grey;
     font-size: 1rem;
+    
+}
+
+.buttons{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .buttons button{
     padding: 8px 10px;
     border: none;
-    border-radius: 5px;
+    border-radius: 3px;
     font-size: 1rem;
+    margin: 0 5px;
 }
 
 .links {
     display: flex;
     font-size: 14px;
     color: grey;
+    margin: 1rem 0;
 }
 
 .links a{
     margin: 0 5px;
+    text-decoration: none;
+    
+}
+
+.fa-magnifying-glass{
+    
+}
+
+.searchinput .icons1{
+   
+    left: 10px;
+top:13px;
+color: grey;
+}
+.searchinput .icons2 {
+right: 10px;
+top: 13px;
+color: rgba(5, 113, 246, 0.923);
+
 }
