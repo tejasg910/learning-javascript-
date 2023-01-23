@@ -1,0 +1,80 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --blue: rgba(5, 5, 226, 0.89);
+    --red: red;
+    --orange: orange;
+    --green: green;
+}
+
+.maincontainer .main .logo {
+    display: flex;
+}
+.maincontainer{
+   
+}
+
+.maincontainer .main{
+    width: 100vw;
+        height: 90vh;
+        
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.maincontainer .main .logo h3{
+    font-size: 5rem;
+}
+
+.maincontainer .main .logo .blue{
+    color: var(--blue);
+}
+.maincontainer .main .logo .red {
+    color: var(--red);
+}
+.maincontainer .main .logo .green {
+    color: var(--green);
+}
+.maincontainer .main .logo .orange {
+    color: var(--orange);
+}
+
+.searchinput{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+
+.input{
+    padding: 0.8rem;
+    border-radius: 20px;
+    width: 40vw;
+    outline: none;
+    border: 1px solid grey;
+    font-size: 1rem;
+}
+
+.buttons button{
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.links {
+    display: flex;
+    font-size: 14px;
+    color: grey;
+}
+
+.links a{
+    margin: 0 5px;
+}
