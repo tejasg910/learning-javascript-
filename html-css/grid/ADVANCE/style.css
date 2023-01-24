@@ -1,0 +1,31 @@
+
+.box1{
+    grid-area: header;
+    background-color: aqua;
+}
+.box2 {
+    grid-area: contentarea;
+    background-color: blueviolet;
+}
+
+.box3 {
+    grid-area: side;
+    background-color: red;
+}
+.box4{
+    grid-area: footer;
+    background-color: khaki;
+}
+
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header header"
+    "contentarea contentarea contentarea side"
+    "contentarea contentarea contentarea side"
+    "footer footer footer footer"
+    ;
+}

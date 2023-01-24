@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --small-width: 9rem;
+    --small-height: 4rem;
+}
+
+.container{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: flex-start;
+    width: 100vw;
+  
+    
+}
+
+
+.container .box{
+    
+  
+    width: var(--small-width);
+    height: var(--small-height);
+    margin: 10px;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 7px;
+}
+
+.container .small{
+
+    background-color: rgb(232, 225, 225);
+   
+}
+
+.container .large {
+    
+    background-color: rgb(223, 167, 167);
+    width: calc(2 * var(--small-width));
+    height: calc(2 * var(--small-height));
+
+}
+
+.hidden{
+    visibility: hidden;
+}
