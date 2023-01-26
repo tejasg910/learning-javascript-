@@ -1,0 +1,17 @@
+.container{
+    width: 100vw;
+    height: 200vh;
+
+}
+
+.chat{
+
+    /* the position of an element will be fixed at the right side from bottom 10px no matter you are scrolling or not  */
+    position: fixed;
+    right: 0;
+    bottom: 10px;
+    width: 200px;
+    height: 100px;
+    background-color: rgb(155, 155, 230);
+    border: 1px solid purple;
+}

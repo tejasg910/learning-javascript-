@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    
+        border: 1px solid red;
+        margin: 10rem;
+        position: relative;
+        width: 70vw;
+        height: 20vh;
+}
+
+.box    {
+    position: relative;
+    top: 0;
+    border: 1px solid black;
+
+}
+
+
+/* 1. if you declare a block or div as relative which is enclosed is the container will supposed to be the parent of that container
+
+
+
+2. but in case of position: absolute it is quietly different. It needs a parent container having position relative or absolute else it will assume the parent to the viewport 
+
+
+
+*/
