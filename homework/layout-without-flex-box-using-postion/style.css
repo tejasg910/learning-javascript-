@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    position: relative;
+    width: 100vw;
+}
+
+.box{
+    border: 1px solid black;
+    width: 7rem;
+    height: 7rem;
+    position: absolute;
+}
+
+
+.leftupper{
+    left: 0;
+    top: 0;
+}
+
+.rightupper{
+    right: 0;
+    top: 0;
+}
+
+.centerupper{
+   
+        left: 0;
+       
+        right: 0;
+   margin: auto;
+}
+
+.leftbottom {
+    left: 0;
+    bottom: 0;
+}
+
+.rightbottom {
+    right: 0;
+    bottom: 0;
+}
+
+.centerbottom {
+
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.middlesection{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100vw;
+  
+    height: 50vh;
+
+}
+
+.midleft{
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.midright{
+
+    right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+}
+
+.midcenter{
+    position: absolute;
+    width: 25%;
+    
+    height: 100%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        
+}
+.midcentertop{
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+
+
+}
+.midcentercenter{
+    top: 0;
+    bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+
+}
+
+.midcenterbottom{
+
+  
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+
+}
+
+.midcenterleft{
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+}
+.midcenterright{
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
