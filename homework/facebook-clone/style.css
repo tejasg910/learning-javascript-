@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    
+
+}
+
+.loginsection{
+    width: 100vw;
+    height: 70vh;
+    background-color: #f0f2f5;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+  
+}
+
+.loginsection form{
+    display: flex;
+    flex-direction: column;
+}
+
+.loginsection img{
+    width: 240px;
+}
+
+.formcard{
+    font-family:SFProDisplay-Regular,
+        Helvetica,
+        Arial,
+        sans-serif;
+    width: 400px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    
+}
+
+.formcard p{
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 19px;
+}
+.formcard input{
+    padding: 10px;
+    font-size: 17px;
+    outline: none;
+    border-radius: 6px;
+    border: 1px solid rgb(226, 220, 220);
+    margin:  6px 0;
+}
+.formcard input::placeholder {
+    opacity: 0.7;
+}
+
+.formcard input:focus::placeholder{
+    opacity: 0.5;
+}
+
+.submitbtn{
+    background-color: #1877f2;
+    padding: 10px;
+    border-radius: 6px ;
+    border: none;
+    color: white;
+    font-weight: bold;
+    margin:  6px 0;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.formcard .formlink a{
+    text-decoration: none;
+    color: #1877f2;
+    font-size: 14px;
+
+  
+}
+
+.formcard .formlink a:hover{
+    text-decoration: underline;
+}
+
+.formlink{
+    text-align: center;
+}
+
+
+footer{
+    width: 70vw;
+    margin: auto;
+    height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+       
+}
+.currentLanguage {
+    text-decoration: none;
+    color: #737373;
+    cursor: text;
+    font-size: 14px;
+
+
+}
+.addlanguagebutton button {
+    padding: 2px 9px;
+    font-weight: bold;
+    font-size: 17px;
+    color: grey;
+    margin-left: 7px;
+    cursor: pointer;
+}
+.languagesection .otherlanguage{
+    text-decoration: none;
+    color: #737373;
+    font-size: 12px;
+    margin-left: 7px;
+}
+
+
+.currentLanguage .otherlanguage:hover{
+    text-decoration: underline;
+    
+}
+
+
+footer .googlelinks{
+    text-decoration: none;
+        color: #737373;
+        font-size: 14px;
+        margin-right: 7px;
+}
+
+footer .googlelinks:hover{
+    text-decoration: underline;
+}
+
+footer .meta  {
+    text-decoration: none;
+        color: #737373;
+        font-size: 14px;
+        margin-right: 7px;
+}
+
+.languagesection, .googlelinkssection, .copyrightsection{
+    padding: 10px 0;
+}
+
+footer{
+   
+}
+
+@media screen and (max-height: 800px) {
+    footer{
+        margin: 10px 0;
+        width: 100vw;
+    }
+}
