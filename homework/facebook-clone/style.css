@@ -158,9 +158,18 @@ footer{
    
 }
 
-@media screen and (max-height: 800px) {
+@media screen and (max-width: 800px) {
     footer{
         margin: 10px 0;
         width: 100vw;
+    }
+}
+
+@media screen and (max-width: 418px) {
+    .formcard{
+        width: 100vw;
+    }
+    footer{
+        height: 40vh;
     }
 }
