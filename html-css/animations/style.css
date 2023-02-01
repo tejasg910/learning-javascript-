@@ -51,6 +51,8 @@ main{
         transform: translateX(0px);
     }
 
+
+
     50% {
         transform: translateX(-100px);
 
@@ -77,7 +79,7 @@ we can manage the state of the element
 animation is a utility which can used to move elements or animates the elements without using the javascript 
 
 at keyframe :
- css rule controls the intermediate step in the animation step 
+ css rule controls the intermediate step in the animation step.
 
 
 
