@@ -1,0 +1,84 @@
+main{
+    width: 100vw;
+        height: 100vh;
+    display: flex;
+    align-items: center;
+   
+    justify-content: center;
+}
+
+.box{
+    width: 5%;
+
+    height: 5%;
+    border: 1px solid black;
+    background-color: red;
+    animation-name: colorChange;
+    animation-duration: 2s;
+   animation-iteration-count: infinite;
+   animation-play-state: running;
+
+   animation-direction: alternate-reverse;
+
+
+
+}
+
+
+/* @keyframes colorChange {
+        from{
+            background-color: aqua;
+        }
+        to{
+            background-color: blue;
+        }
+} */
+
+
+/* @keyframes colorChange {
+    from {
+            transform: translateX(0px);        }
+    
+        to {
+                    transform: translateX(-100px);
+            
+            }
+                    
+        } */
+
+@keyframes colorChange {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(-100px);
+
+    }
+          100% {
+              transform: translateX(0px);
+    
+          }
+
+}
+
+
+
+/* what is keyframe 
+
+
+we can manage the state of the element 
+
+
+
+*/
+/* defination :
+
+animation is a utility which can used to move elements or animates the elements without using the javascript 
+
+at keyframe :
+ css rule controls the intermediate step in the animation step 
+
+
+
+*/
