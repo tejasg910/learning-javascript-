@@ -6,9 +6,37 @@
 
 main{
     
+    min-width: 300px;
     width: 1000px;
+    
 }
+.animate_left{
+    animation-name: slide_left;
+    animation-duration: 1s;
+    
+}
+.animate_right {
+    animation-name: slide_right;
+    animation-duration: 1s;
 
+}
+@keyframes slide_left {
+    from{
+        transform: translateX(-200px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+@keyframes slide_right {
+    from {
+        transform: translateX(200px);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
 .loginsection{
     width: 100%;
     height: 70vh;
