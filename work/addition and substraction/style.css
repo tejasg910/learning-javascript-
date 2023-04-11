@@ -1,0 +1,41 @@
+body {
+  background-color: black;
+}
+
+.btn {
+  width: 100px;
+  height: 100px;
+  border: 1px solid orange;
+  background-color: white;
+  text-align: center;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: red;
+}
+
+.calbox {
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.plus,
+.minus {
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  padding: 1rem 2rem;
+  background-color: rgb(15, 217, 89);
+}
+.answer {
+  padding: 2rem 6.5rem;
+  background-color: white;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
