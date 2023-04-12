@@ -10,10 +10,16 @@ btns.forEach((btn) => {
   btn.addEventListener("click", () => {
     arr.push(parseInt(btn.innerText));
     console.log(arr);
+    answerDiv.innerText = "";
+    answer = 0;
+    arr.forEach((item) => {
+      answerDiv.innerText += item;
+    });
   });
 });
 
 add.addEventListener("click", () => {
+  answerDiv.innerText = "";
   arr.forEach((item) => {
     answer += item;
   });
@@ -22,6 +28,7 @@ add.addEventListener("click", () => {
 });
 
 minus.addEventListener("click", () => {
+  answerDiv.innerText = "";
   arr.forEach((item) => {
     answer -= item;
   });

@@ -39,3 +39,11 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.fun {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 7rem;
+}
