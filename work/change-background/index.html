@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change background</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .blue,
+    .red,
+    .black {
+        cursor: pointer;
+        color: white;
+        background-color: orange;
+        border-radius: 5px;
+        padding: 10px 30px;
+        border: 1px solid green;
+        margin: 0 10px;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+
+
+    <button class="blue">1</button>
+    <button class="red">2</button>
+    <button class="black">3</button>
+    <script>
+
+
+        const changeColor = {
+            1: "blue",
+            2: "red",
+            3: "black",
+
+
+            changeColor: function (btn) {
+
+                document.bgColor = this[btn.innerText];
+            }
+        }
+
+        const blue = document.querySelector(".blue")
+        const red = document.querySelector(".red")
+        const black = document.querySelector(".black")
+        const btn = document.querySelectorAll('button');
+
+        btn.forEach((item) => {
+            item.addEventListener("click", function () {
+                changeColor.changeColor(this)
+            })
+        })
+
+        // blue.addEventListener("click", () => {
+        //     changeColor.changeColor(blue)
+        // })
+
+        // red.addEventListener("click", () => {
+        //     changeColor.changeColor(red)
+        // })
+
+        // black.addEventListener("click", () => {
+        //     changeColor.changeColor(black)
+        // })
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

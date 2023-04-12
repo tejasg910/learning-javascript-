@@ -30,9 +30,10 @@ add.addEventListener("click", () => {
 minus.addEventListener("click", () => {
   answerDiv.innerText = "";
   answer = arr[0];
-  arr.forEach((item) => {
-    answer -= item;
-  });
+  for (let i = 1; i < arr.length; i++) {
+    answer -= arr[i];
+  }
+
   arr = [];
   answerDiv.innerText = answer;
 });
