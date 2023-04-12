@@ -29,6 +29,7 @@ add.addEventListener("click", () => {
 
 minus.addEventListener("click", () => {
   answerDiv.innerText = "";
+  answer = arr[0];
   arr.forEach((item) => {
     answer -= item;
   });
