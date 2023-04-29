@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reminder app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form id="form">
+
+        <input type="number" id="number" placeholder="Enter mobile">
+        <input type="submit" value="Add">
+    </form>
+    <div class="mobiles">
+
+    </div>
+
+</body>
+
+<script>
+
+    if (!localStorage.getItem("mobile")) {
+        let mobiles = [];
+        localStorage.setItem("mobile", JSON.stringify(mobiles));
+
+    } else {
+
+        const mobileDiv = document.querySelector(".mobiles");
+        let mobiles = localStorage.getItem("mobile");
+        mobiles = JSON.parse(mobiles)
+        mobiles.forEach((item) => {
+            mobileDiv.innerHTML += item;
+        })
+    }
+
+    const form = document.querySelector("#form");
+
+
+    form.addEventListener("submit", addMobile)
+    function addMobile(e) {
+        e.preventDefault()
+
+        let arrData = localStorage.getItem("mobile");
+        console.log(arrData)
+        arrData = JSON.parse(arrData)
+
+        const input = document.getElementById("number").value;
+        arrData.push(input)
+
+
+
+
+
+        localStorage.setItem("mobile", JSON.stringify(arrData));
+
+        let mobiles = localStorage.getItem("mobile");
+        mobiles = JSON.parse(mobiles)
+
+        const mobileDiv = document.querySelector(".mobiles");
+        mobileDiv.innerHTML = ""
+        mobiles.forEach((item) => {
+            mobileDiv.innerHTML += item;
+        })
+
+    }
+</script>
+
+</html>
